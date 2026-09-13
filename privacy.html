@@ -28,8 +28,8 @@
 
 <p class="lede">Lantern Reader is used by children. It was built so that there is almost
 nothing to protect: no account, no server of ours, and nothing sent anywhere for us to see.
-This page explains exactly what the app does with information, including the one case where
-something does leave the device.</p>
+This page explains exactly what the app does with information, including what happens to your
+child's voice when she reads aloud.</p>
 
 <div class="card">
   <strong>The short version</strong>
@@ -39,8 +39,9 @@ something does leave the device.</p>
     <li>We collect nothing. No analytics, no advertising, no tracking, no third-party SDKs.</li>
     <li>The app makes <strong>no network requests of its own</strong> — this is enforced by an
         automated test that fails the build if any appear.</li>
-    <li><strong>One exception:</strong> if you let your child read aloud into the microphone,
-        short audio clips are sent to Apple to be turned into text. Details below.</li>
+    <li><strong>Her voice never leaves the device.</strong> When she reads aloud, the speech
+        is turned into text by your own phone or tablet, and the audio is sent nowhere.
+        Details below.</li>
   </ul>
 </div>
 
@@ -69,24 +70,24 @@ it is sent to us, because there is nowhere for it to be sent.</p>
   </tbody>
 </table>
 
-<h2>The microphone, and the one thing that leaves the device</h2>
+<h2>The microphone, and what happens to her voice</h2>
 
 <p>Lantern Reader can listen while your child reads aloud so that it can follow along and
 notice which words she stumbles on. This is optional. If you decline the microphone, or turn
 it off later, the whole app still works — she taps instead of speaking, and nothing is lost.</p>
 
 <div class="card warm">
-  <p><strong>Please read this part.</strong> When reading aloud is used on iPhone or iPad, the
-  app uses Apple's speech recognition to turn speech into text. In the current version, that
-  recognition is performed <strong>by Apple's servers</strong>, which means short snippets of
-  your child's voice are sent to Apple to be transcribed.</p>
-  <p style="margin-bottom:0">This is Apple's own service, not ours. We never receive the audio,
-  and we never receive a copy of anything Apple transcribes beyond the text shown on screen in
-  that moment. Apple's handling of that audio is covered by
-  <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+  <p><strong>Her voice stays on the device.</strong> Apple's speech recognition can work in two
+  ways: on the device itself, or by sending audio to Apple's servers. This app
+  <strong>requires the on-device mode</strong>. The audio is turned into text by your own phone
+  or tablet, and it is never sent to Apple, to us, or to anyone else.</p>
+  <p style="margin-bottom:0">Not every device and language can do this. Where yours cannot, the
+  app <strong>switches listening off and says so on screen</strong> — it never quietly falls
+  back to sending her voice away instead. She reads aloud and taps when she has finished, and
+  nothing about the lesson is lost.</p>
 </div>
 
-<p>Whatever happens with recognition, the following are true of this app at all times:</p>
+<p>The following are true at all times:</p>
 <ul>
   <li>Audio is <strong>never saved to disk</strong> by Lantern Reader.</li>
   <li>Audio is <strong>never attached</strong> to any error report or feedback.</li>
@@ -94,11 +95,9 @@ it off later, the whole app still works — she taps instead of speaking, and no
       discards it.</li>
   <li>The microphone is used <strong>only</strong> while a reading exercise is on screen and
       your child has started it. It is not listening at other times.</li>
+  <li>The microphone is <strong>optional</strong>. Decline it and every part of the app still
+      works by tapping.</li>
 </ul>
-
-<p>We intend to move this to Apple's on-device recognition, so that audio does not leave the
-phone at all. This page will be updated when that ships, and the change will be noted in the
-app's release notes.</p>
 
 <h2>Permissions the app asks for</h2>
 <table>
